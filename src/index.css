@@ -1,3 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nav-background: #92b2ba;
+  --primary-background: whitesmoke;
+  --pink-squares: #f0a8bb;
+  --footer-background: #eeeeee;
+  --blue-text: #92b2ba;
+}
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +19,47 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-background)
 }
+
+.nav-container{
+  background-color: var(--nav-background)
+}
+
+.pink-squares {
+  background-color: var(--pink-squares)
+}
+
+.footer-background {
+  background-color: var(--footer-background)
+}
+
+.text-blue {
+  color: var(--blue-text)
+}
+
+.logo-size {
+    width: 25%;
+    height: auto;
+}
+
+.text-pink {
+  color: var(--pink-squares)
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .mobile-hidden {
+    display:none;
+  }
+}
+  
